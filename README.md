@@ -1,16 +1,23 @@
-# React + Vite
+# Calculadora Web - Prueba Técnica (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esta es una aplicación web de una sola página que implementa una calculadora completamente funcional e intuitiva, desarrollada utilizando **React** y estructurada con **Vite**.
 
-Currently, two official plugins are available:
+# Características y Requisitos Cumplidos
+- **Operaciones Básicas:** Soporte para suma, resta, multiplicación y división.
+- **Manejo de Datos:** Control preciso de números decimales y alternancia de signos (+/-).
+- **Funciones Especiales:** Botón de limpiado total (AC) y botón de retroceso (<) para eliminar el último dígito.
+- **Control de Versiones:** Repositorio gestionado localmente con Git.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+# Instalación y Execution Local
 
-## React Compiler
+Para clonar y ejecutar este proyecto en tu entorno local, asegúrate de tener instalado [Node.js](https://nodejs.org/). Luego, sigue estos pasos en tu terminal:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Instalar las dependencias del proyecto:
+   ```bash
+   npm install
 
-## Expanding the ESLint configuration
+2. Iniciar el servidor en tiempo real.
+ npm run dev
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3.  Abrir el navegador en la ruta local indicada por la consola http://localhost:5175/
+
