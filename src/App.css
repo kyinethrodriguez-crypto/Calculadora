@@ -1,0 +1,87 @@
+/* Centrar la calculadora en la pantalla */
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #f4f7f6;
+  margin: 0;
+}
+
+/* El cuerpo de la calculadora */
+.calculadora {
+  width: 320px;
+  background-color: #1c1c1c;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Título de la calculadora */
+h1 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 10px;
+  text-align: left;
+  font-family: Arial, sans-serif;
+}
+
+/* La pantalla de texto */
+.pantalla {
+  width: 100%;
+  height: 70px;
+  background-color: #1c1c1c;
+  border: none;
+  color: #ffffff;
+  font-size: 2.5rem;
+  text-align: right;
+  padding: 10px;
+  margin-bottom: 15px;
+  outline: none;
+  font-family: Arial, sans-serif;
+}
+
+/* Contenedor de botones en cuadrícula de 4 columnas */
+.botones {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+/* Estilo base para TODOS los botones */
+.btn {
+  height: 60px;
+  border-radius: 50%; /* Los hace completamente redondos */
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #333333;
+  color: white;
+  transition: filter 0.1s ease;
+}
+
+/* Efecto visual al hacer clic */
+.btn:active {
+  filter: brightness(1.3);
+}
+
+/* Botones de operaciones (+, -, *, /, =) */
+.btn.op {
+  background-color: #ff9f0a;
+  color: white;
+}
+
+/* Botones de funciones superiores (AC, borrar, signo) */
+.btn.fn {
+  background-color: #a5a5a5;
+  color: black;
+}
+
+/* Hacer que el botón de igual (=) o el cero se adapten si lo deseas */
+.btn.eq {
+  background-color: #ff9f0a;
+  color: white;
+}
